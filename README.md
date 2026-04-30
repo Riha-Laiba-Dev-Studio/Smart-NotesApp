@@ -7,7 +7,7 @@ A complete **Smart Notes Management System** built with **Laravel & MySQL**, fea
 ## 📌 🔗 Demo
 
 🎥 **Watch Full Project Demo:**  
-👉 https://youtu.be/5vjn0xql4mw
+👉 https://youtu.be/0sVjgCyzX2A
 
 ---
 
