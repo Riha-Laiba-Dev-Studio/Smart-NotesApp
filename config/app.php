@@ -56,6 +56,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Admin Registration Key
+    |--------------------------------------------------------------------------
+    |
+    | If at least one admin already exists, public admin registration is blocked
+    | unless the request includes a valid key. Set this in your ".env" file:
+    | ADMIN_REGISTER_TOKEN=some-long-secret
+    |
+    */
+
+    'admin_register_token' => env('ADMIN_REGISTER_TOKEN'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
