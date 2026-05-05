@@ -55,8 +55,8 @@
     @endif
 
     {{-- Note content --}}
-    <div class="bg-white dark:bg-gray-800 rounded shadow p-6 prose dark:prose-invert max-w-none">
-        {!! $note->content !!}
+    <div class="bg-white dark:bg-gray-800 rounded shadow p-6 prose dark:prose-invert max-w-none whitespace-pre-wrap">
+        {!! nl2br(e($note->content)) !!}
     </div>
 
     {{-- Categories + Tags --}}
