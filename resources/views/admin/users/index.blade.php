@@ -68,7 +68,7 @@
                                 <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
                                 Notes
                             </a>
-                            <form method="POST" action="{{ route('admin.users.block', $u) }}" class="inline">@csrf
+                            <form method="POST" action="{{ route('admin.users.block', $u) }}" class="inline">@csrf @method('PATCH')
                                 <button class="inline-flex items-center gap-1.5 text-xs px-2 py-1 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900/30 ml-1.5">
                                     <i data-lucide="{{ $u->is_blocked ? 'unlock' : 'lock' }}" class="w-3.5 h-3.5"></i>
                                     {{ $u->is_blocked ? 'Unblock' : 'Block' }}
